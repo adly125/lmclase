@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Listas </title>
+<style>
+	#lista1 {
+		list-style-type: circle
+	}
+	#lista2 {
+		list-style-type: upper-roman
+	}
+	#lista3{
+		list-style-image: url(img/flecha1.png)
+
+	}
+	/*ol ul {list-style-type: none} aplica a ul descendiente de ol*/
+	ol ul {
+		list-style-type: none;
+	}
+	/*ol ol { aplica a ol descendiente de ol*/
+	ol ol {
+		list-style-type: lower-latin 
+	}
+		
+	}
+</style>
+</head>
+
+<body>
+	<h4><a href="/">pagina inicio</a></h4>
+	<h1>Listas</h1>
+	<h3>Listas desordenadas (ul)</h3>
+
+	<!-- ul>li{Elemento}*10 -->
+
+	<ul id="lista1">
+		<li>Elemento</li>
+		<li><a href="">Elemento</a></li>
+		<li><strong>Elemento</strong></li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+	</ul>
+	
+	<h3>Listas ordenadas (ol)</h3>
+	<!-- ol>li{Elemento}*10 -->
+	<ol id="lista2">
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+	</ol>
+	<h3>Listas anidadas</h3>
+
+	<ol>
+		<li>elemento</li>
+		<li>elemento</li>
+		<ol>
+			<li>elemento</li>
+			<ul>
+				<li>elemento</li>
+				<li>elemento</li>
+				<li>elemento</li>
+			</ul>
+			<li>elemento</li>
+		</ol>
+		<li>elemento</li>
+		<li>elemento</li>
+		<li>elemento</li>
+		<li>elemento</li>
+		<li>elemento</li>
+		<li>elemento</li>
+		<li>elemento</li>
+		<li>elemento</li>
+	</ol>
+	<ul id="lista3">
+	     <!-- li{elemento}*10 -->
+		<li>elemento</li>
+		<li>elemento</li>
+		<li>elemento</li>
+		<li>elemento</li>
+		<li>elemento</li>
+	</ul>
+
+</body>
+</html>
