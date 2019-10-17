@@ -1,0 +1,8 @@
+td,table{
+	border: 1px solid blue;
+	text-align: center;
+}
+table{
+	width: 50%;
+	margin: auto;
+}
