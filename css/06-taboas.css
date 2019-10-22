@@ -6,3 +6,24 @@ table{
 	width: 50%;
 	margin: auto;
 }
+th {
+	background-color: black;
+	color:white;
+}
+thead th {
+	background-color: blue;
+	color: yellow;
+}
+tbody td {
+	color: blue;
+	font-family: verdana;
+	
+}
+tfoot td{
+	color: white;
+	font-weight: bold;
+	background-color: grey
+}
+td[rowspan], td[colspan] {
+	background-color: tomato;
+}
