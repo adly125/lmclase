@@ -27,3 +27,6 @@ caption {
 a:hover {color:black;
 	
 }
+td:hover{
+	background: #ddd;
+}
