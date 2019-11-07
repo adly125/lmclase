@@ -23,13 +23,43 @@
 		</div>
 		<div class="campos">
 			<label>Sexo:</label>
-			<label for</label>
-			<label for="chome" type="radio" name="sexo"> </label>
+			<label for="chome">Home:</label>
+			<input id="chome"  type="radio" name="sexo" value="H"> </input>
+			<label for="cmuller">Muller:</label>
+			<input id="cmuller" type="radio" name="sexo" value="M"></input>
+
+		<div class="campos">
+			<label>Xornada:</label>
+			<label for="cdiurno">Diurno:</label>
+			<input id="cdiurno" type="radio" name="xornada" value="D">
+			<label for="cnocturno">Nocturno:</label>
+			<input id="cnocturno" type="radio" name="xornada" value="N">
+			<!-- o parametro checked marca unha opcion por defecto, tenis tanto radio como en campo checkbox  -->
+
+		</div>
+		<div class="campos">
+			<label>Deportes:</label>
+			<label for="cf">Futbol</label>
+			<input id="cf" type="checkbox" name="tenis" value="T">
+			<label for="cf">Tenis</label>
+			<input id="cf" type="checkbox" name="tenis" value="T" checked>
+		</div>
+
+		<!-- campo oculto: -->
+		<input type="hidden" name="ref" value="RF456">
+
+			
+		
 
 
 		<div class="campos">
 			<input type="submit" value="enviar datos" >
+			<input type="reset" name="Borrar">
+			<input type="button" value="Personalizado" onclick="alert("ola")>
+
 		</div>
+		<div class="campos">
+			<input type="image" src="img/boton.png">
 
 
 
