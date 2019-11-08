@@ -40,14 +40,24 @@
 		<div class="campos">
 			<label>Deportes:</label>
 			<label for="cf">Futbol</label>
-			<input id="cf" type="checkbox" name="tenis" value="T">
-			<label for="cf">Tenis</label>
-			<input id="cf" type="checkbox" name="tenis" value="T" checked>
+			<input id="cf" type="checkbox" name="futbol" value="F">
+			<label for="ct">Tenis</label>
+			<input id="ct" type="checkbox" name="tenis" value="T" checked>
 		</div>
 
 		<!-- campo oculto: -->
 		<input type="hidden" name="ref" value="RF456">
-
+		<div class="campos">
+		<label for="cprov">Provincia:</label>
+		<select id="cprov" name="prov">
+			<option value=""selected> </option> 
+			<option value="LU">Lugo </option>
+			<option value="AC">A Coruña  </option>
+			<option value="OU">Ourense </option>
+			<option value="PO">Pontevedra </option>
+		</select>
+		</div>
+		<!-- o caracter selected marca unha opcion por defecto en etiquetas option de selected -->
 			
 		
 
@@ -55,11 +65,13 @@
 		<div class="campos">
 			<input type="submit" value="enviar datos" >
 			<input type="reset" name="Borrar">
-			<input type="button" value="Personalizado" onclick="alert("ola")>
+			<input type="button" value="Personalizado" onclick="alert('ola')>
 
 		</div>
 		<div class="campos">
 			<input type="image" src="img/boton.png">
+		</div>
+
 
 
 
