@@ -9,91 +9,96 @@
 	<div id="contenedor">
 		<h1>Formularios</h1>
 		<form action="07-formularios.php" method="get">
-		<div class="campos">
-		<label for="cnome">Nome:</label>
-		<input id="cnome" type="text" name="nome" maxlength="15" placeholder="pon o teu nome" value="antonio">
-		</div>
-		<div class="campos">
-			<label for="capelidos">Apelidos:</label>
-			<input type="text" name="apelidos" maxlength="15">
-		</div>
-		<div class="campos">
-			<label for="cclave">Contrasinal:</label>
-			<input id="cclave" type="password" name="clave">
-		</div>
-		<div class="campos">
-			<label>Sexo:</label>
-			<label for="chome">Home:</label>
-			<input id="chome"  type="radio" name="sexo" value="H"> </input>
-			<label for="cmuller">Muller:</label>
-			<input id="cmuller" type="radio" name="sexo" value="M"></input>
+			<fieldset> 
+				<!-- fielset para un recuadro aos campos e legend para poñerlle nome -->
+				<legend>Campos identificacion</legend>
+				<div class="campos">
+					<label for="cnome">Nome:</label>
+					<input required id="cnome" type="text" name="nome" maxlength="15" placeholder="pon o teu nome" value="antonio">
+				</div>
+				<div class="campos">
+					<label for="capelidos">Apelidos:</label>
+					<input type="text" name="apelidos" maxlength="15">
+				</div>
+				<div class="campos">
+					<label for="cclave">Contrasinal:</label>
+					<input id="cclave" type="password" name="clave">
+				</div></fieldset>
+				<fieldset><legend>Campos Radio e Checkbox</legend>
+					<div class="campos">
+						<label>Sexo:</label>
+						<label for="chome">Home:</label>
+						<input id="chome"  type="radio" name="sexo" value="H"> </input>
+						<label for="cmuller">Muller:</label>
+						<input id="cmuller" type="radio" name="sexo" value="M"></input>
 
-		<div class="campos">
-			<label>Xornada:</label>
-			<label for="cdiurno">Diurno:</label>
-			<input id="cdiurno" type="radio" name="xornada" value="D">
-			<label for="cnocturno">Nocturno:</label>
-			<input id="cnocturno" type="radio" name="xornada" value="N">
-			<!-- o parametro checked marca unha opcion por defecto, tenis tanto radio como en campo checkbox  -->
+						<div class="campos">
+							<label>Xornada:</label>
+							<label for="cdiurno">Diurno:</label>
+							<input id="cdiurno" type="radio" name="xornada" value="D">
+							<label for="cnocturno">Nocturno:</label>
+							<input id="cnocturno" type="radio" name="xornada" value="N">
+							<!-- o parametro checked marca unha opcion por defecto, tenis tanto radio como en campo checkbox  -->
 
-		</div>
-		<div class="campos">
-			<label>Deportes:</label>
-			<label for="cf">Futbol</label>
-			<input id="cf" type="checkbox" name="futbol" value="F">
-			<label for="ct">Tenis</label>
-			<input id="ct" type="checkbox" name="tenis" value="T" checked>
-		</div>
+						</div>
+						<div class="campos">
+							<label>Deportes:</label>
+							<label for="cf">Futbol</label>
+							<input id="cf" type="checkbox" name="futbol" value="F">
+							<label for="ct">Tenis</label>
+							<input id="ct" type="checkbox" name="tenis" value="T" checked>
+						</div></div></fieldset>
 
-		<!-- campo oculto: -->
-		<input type="hidden" name="ref" value="RF456">
-		<div class="campos">
-		<label for="cprov">Provincia:</label>
-		<select id="cprov" name="prov">
-			<option value=""selected> </option> 
-			<option value="LU">Lugo </option>
-			<option value="AC">A Coruña  </option>
-			<option value="OU">Ourense </option>
-			<option value="PO">Pontevedra </option>
-		</select>
-		</div>
-		<!-- o caracter selected marca unha opcion por defecto en etiquetas option de selected -->
-		<div class="campos">
-			<label for="cso">Sistema:<br></label>
-			<select name="so[]" id="cso" multiple size="5">
-				<option value="w10">Windows 10</option>
-				<option value="w8">Windows 8</option>
-				<option value="lx">Linux</option>
-				<option value="mos">Mac OS</option>
-				<option value="ot">Outros</option>
-			</select>
-		</div>
-		<div class="campos">
-			<label for="ccoment">Comentario:<br></label>
-			<textarea name="coment" id="ccoment" cols="30" rows="10"></textarea>
-		</div>
-			
-		
-
-
-		<div class="campos">
-			<input type="submit" value="enviar datos" >
-			<input type="reset" name="Borrar">
-			<input type="button" value="Personalizado" onclick="alert('ola')">
-
-		</div>
-		<div class="campos">
-			<input type="image" src="img/boton.png" width="20%">
-		</div>
+						<!-- campo oculto: -->
+						<input type="hidden" name="ref" value="RF456">
+						<div class="campos">
+							<label for="cprov">Provincia:</label>
+							<select id="cprov" name="prov">
+								<option value=""selected> </option>
+								<optgroup label="Galicia"> </optgroup> 
+								<option value="LU">Lugo </option>
+								<option value="AC">A Coruña  </option>
+								<option value="OU">Ourense </option>
+								<option value="PO">Pontevedra </option>
+							</select>
+						</div>
+						<!-- o caracter selected marca unha opcion por defecto en etiquetas option de selected -->
+						<div class="campos">
+							<label for="cso">Sistema:<br></label>
+							<select name="so[]" id="cso" multiple size="5">
+								<option value="w10">Windows 10</option>
+								<option value="w8">Windows 8</option>
+								<option value="lx">Linux</option>
+								<option value="mos">Mac OS</option>
+								<option value="ot">Outros</option>
+							</select>
+						</div>
+						<div class="campos">
+							<label for="ccoment">Comentario:<br></label>
+							<textarea name="coment" id="ccoment" cols="30" rows="10"></textarea>
+						</div>
 
 
 
 
+						<div class="campos">
+							<input type="submit" value="enviar datos" >
+							<input type="reset" name="Borrar">
+							<input type="button" value="Personalizado" onclick="alert('ola')">
+
+						</div>
+						<div class="campos">
+							<input type="image" src="img/boton.png" width="20%">
+						</div>
 
 
 
-		</form>
-	</div>
-	
-</body>
-</html>
+
+
+
+
+					</form>
+				</div>
+
+			</body>
+			</html>

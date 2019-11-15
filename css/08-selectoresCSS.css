@@ -1,0 +1,35 @@
+body {
+	font-size: 1.1rem;
+	font-family: verdana;
+}
+
+/*os parrafos do bloque2 teña a letra conmic*/
+.bloque2 p	{
+		font-family: comic sans ms;
+}
+/*h1 e h3  de bloque1: color azul*/
+.bloque1 h1,.bloque1 h3 {
+	color: blue
+
+}
+/*h1 e h3 do bloque2: color verde*/
+.bloque2 h1, .bloque2 h3{
+	color:green;
+}
+/*h3 que van despos dun h1: subliñados*/
+h1+h3	{
+	text-decoration: underline;
+	}
+p+p {
+	text-indent: 1rem;
+}
+em {
+	color: red;
+}
+span {
+	font-weight: bold;
+}
+/*em, dentro de span, do bloque1: color:tomate*/
+.bloque1 span em {
+	color: #999;
+}
