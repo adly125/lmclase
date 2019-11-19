@@ -33,3 +33,8 @@ span {
 .bloque1 span em {
 	color: #999;
 }
+/*exemplo de pseudo-selector*/
+p:first-letter {
+	font-size: 3rem;
+	font-weight: bold;
+}
