@@ -1,0 +1,39 @@
+#c1 p {
+	/*inspeccionar*/
+	/*box-sizing :content box*/
+	width: 300px; 
+	border: 1px solid blue;
+	padding: 10px;
+	margin: 20px;
+}
+#c1 p em{
+	border: 2px dotted red;
+	padding: left 10px;
+	padding: right 15px;
+	/*os elementos en liña non teñen en conta as 
+	seguintes propiedades */
+	width: 100px;
+	height: 40px;
+	display:inline-block;
+	/*si admite estas propiedades se cambiamos o seu 
+	display a inline-block ou a block*/
+
+}
+#c2 p{
+
+	box-sizing: border-box;
+	width: 300px;
+	border:1px solid blue;
+	padding: 10px;
+	margin: 20px;
+}
+#c3 p{
+	box-sizing: border-box;
+	width: 25%;
+	border: 1px solid black;
+	background-color:  grey;
+	display: inline-block;
+	float: left;
+	padding: 20px;
+
+}
