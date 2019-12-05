@@ -1,0 +1,43 @@
+body {
+	font-size: 1.2em; 
+	background-color: #ddd;
+}
+#contenedor {
+	width: 700px;
+	border: 1px dotted grey;
+	padding: 20px;
+	margin: 50px auto;
+	/*background-image: */
+	/*background-color: */
+	/*background-repeat:*/
+	/*background-position*/
+	background: white url("../img/bombilla.png") no-repeat right bottom;
+/*backgroun fondo blanco imagen sin repetir colocado a dereita bottom(abaixo)*/
+	
+}
+.lista{
+	border:1px dashed tomato;
+	padding: 5px 15px; 
+	margin:15px;
+
+}
+ol {
+	color: blue;
+	font-size: 1.8rem;
+}
+ol ul , ol ol  {
+	color:red;
+	font-size: 1.3rem;
+}
+ol ul ol {
+	color: green;
+	font-size: 1rem;
+}
+li {
+	padding: 5px; 
+	/*margen interior de 5px */
+}
+
+
+/* añade y/o modifica el CSS que necesites */
+

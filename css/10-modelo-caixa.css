@@ -27,13 +27,78 @@
 	padding: 10px;
 	margin: 20px;
 }
-#c3 p{
+#c2 p em {
+	border: 2px dotted red;
+	padding-left: 10px;
+	padding-right: 15px;
+	/*os elementos en liña non teñen 
+	en conta as seguintes propiedades:*/
+	width: 100px; 
+	height: 40px;
+	display: inline-block;
+	/*sí admite estas propiedades
+	 se cambiamos o seu display a inline-block ou a block*/
+}
+#c3 {
+	overflow-y: auto;
+}
+#c3 p {
 	box-sizing: border-box;
 	width: 25%;
-	border: 1px solid black;
-	background-color:  grey;
-	display: inline-block;
+	border:2px solid black;
+	padding: 25px;
+	background-color: grey;
 	float: left;
-	padding: 20px;
+	margin-bottom: 30px;
 
+}
+
+#c4 p {
+	box-sizing: border-box;
+	width: 80%;
+	margin: 50px auto;
+	padding: 20px 40px 60px 80px;
+	border: 1px solid blue;
+	background-color: tomato;
+	background-image: url("../img/boton.png");
+	background-repeat:  no-repeat;
+	background-position: center 95%;
+	background-size: 30% 30%;
+	/*https://uniwebsidad.com/libros/css/capitulo-4/fondos*/
+}
+
+#c5 {
+	box-sizing: border-box;
+	width: 90%;
+	border: 1px dotted green;
+	margin: 0 auto;
+	padding:4rem;
+	background: 
+		url("../img/boton.png") no-repeat left top,
+		url("../img/boton.png") no-repeat 100% 0%,
+		url("../img/guitarra1.jpg") no-repeat 50% 100%
+		;
+	background-size:150px,150px,auto 100%; 	
+
+}
+
+#c6 {
+	width: 80%;
+	height: 500px;
+	margin: 50px auto;
+	padding: 2rem;
+	border: 2px solid red;
+	border-radius: 1rem;
+	box-shadow: 5px 10px #888888;
+
+
+	background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+     background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }

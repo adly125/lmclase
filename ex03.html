@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 3</title>
+	<link rel="stylesheet" href="css/basico.css">
+	<link rel="stylesheet" href="css/estilo03.css">
+</head>
+<body>
+	<h2 class="nombre">Adrian Orosaa</h2>
+	<h3 class="nombre ejercicio">Ejercicio 3. Formulario</h3>
+<!-- 	Ayuda de teclas rápidas de SublimeText:	
+		Ctrl+Shift+A ->selecciona contenido etiqueta (recursivo)
+		Alt+Shift+W ->envuelve selección con etiqueta deseada
+	-->
+
+	<div id="contenedor">
+		<h1>Formulario examen</h1>
+		<fieldset>
+			<div>
+				<label for="cnome">Nome:</label>
+				<input required id="cnome" type="text" name="nome"  placeholder="Escribe tu nombre">
+			</div>
+			<div>
+				<label for="capelidos">Apelidos:</label>
+				<input type="text" name="apelidos" placeholder="Escribe tus apellidos">
+			</div>
+			<div>
+				<label>Sexo:</label>
+				<input id="chome"  type="radio" name="sexo" value="H"> </input>
+				<label for="chome">Home</label>
+				<input id="chome"  type="radio" name="sexo" value="M"> </input>
+				<label for="chome">Mujer</label>
+			</div>
+		</fieldset>
+		<fieldset>
+			<div>
+				<label for="cpais">Pais:</label>
+				<select id="cpais" name="pais">
+					<option></option>	
+					<option value="es">España</option>
+					<option value="fr">Francia</option>
+					<option value="pt">Portugal</option>	
+				</select>	
+			</div>
+		</fieldset>
+
+	</div> <!-- fin div #contenedor -->
+
+		<div style="margin:0 auto;width:700px;text-align:center" >
+			<h3>Crea un formulario con estructura y apariencia similar al de la imagen:</h3>	
+			<a href="img/ejercicio03.jpg" target="_blank"><img src="img/ejercicio03.jpg" style="width:100%;padding:5px;"></a>
+		</div>
+
+	</body>
+	</html>

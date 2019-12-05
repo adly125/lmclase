@@ -1,0 +1,52 @@
+#contenedor {
+	width: 90%;
+	margin: 0 auto;
+	border: 1px dotted blue;
+	padding: 5px;
+}
+
+#c1 {
+	border: 1px solid red;
+}
+
+#irel {
+	position: relative;
+	top: 50px;
+	left: 80px;
+	z-index: -1;
+}
+
+#c2 {
+	margin-top:100px;
+	border: 1px solid green;
+	height: 300px;
+	position: relative;
+}
+
+#c2 img {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+}
+
+#pe {
+	background-color: grey;
+	position: fixed;
+	bottom: 0px;
+}
+#pe a {
+	padding: 10px;
+	display: inline-block;
+}
+
+#menu {
+	background-color: grey;
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+
+}
+.menu {
+	display: inline-block;
+	padding: 10px;
+}s
