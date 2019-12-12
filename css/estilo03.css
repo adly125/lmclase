@@ -10,8 +10,35 @@ body {
 	padding: 20px;
 	margin: 50px auto;
     background-color: #fff;
+    overflow-y: auto; /*para que coloque ben o float */
 }
 h1{
-	text-align: center,
+	text-align: center;
 	
+}
+fieldset{
+	width: 48%;
+	margin: 1%;
+	height: 150px;
+	border: 1px blue solid;
+	background-image: url(../img/fondo1.jpg);
+	background-position: center center;
+	float: left; /*para colocar  os dous fiedlset*/
+
+	
+}
+#campos {
+	padding:  9px;
+	display: inline-block;
+}
+#enviar {
+	background-color: blue;
+	color: white;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: right;
+	border: 
+
 }
